@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorWorld | High-Quality Children’s Coloring Books & Custom Printing</title>
+    <meta name="description" content="Shop high-quality coloring books for kids. Safe, eco-friendly, and educational. We offer custom coloring book printing and fast worldwide delivery." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                primary: '#FF6B6B',    // Playful Red/Pink
+                secondary: '#4ECDC4',  // Teal
+                yellow: '#FFE66D',     // Sunny Yellow
+                dark: '#292F36',       // Soft Black
+                light: '#F7FFF7',      // Off White
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.344.0"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-brand-light text-brand-dark antialiased">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
