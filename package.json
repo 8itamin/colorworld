@@ -1,27 +1,29 @@
 {
   "name": "009-colorworld",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/8itamin/colorworld#readme",
-  "bugs": {
-    "url": "https://github.com/8itamin/colorworld/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/8itamin/colorworld.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
