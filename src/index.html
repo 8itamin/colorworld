@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorJoy | Умные раскраски для детей - Скачать и распечатать</title>
+    <meta name="description" content="Огромный выбор детских раскрасок. Скачивайте PDF для печати или создавайте уникальные рисунки с помощью ИИ. Развивайте творчество вашего ребенка с ColorJoy!" />
+    <meta name="keywords" content="раскраски для детей, скачать раскраски, раскраски pdf, ии раскраски, генератор раскрасок, детское творчество" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                500: '#ec4899',
+                600: '#db2777',
+                900: '#831843',
+              },
+              accent: {
+                400: '#facc15',
+                500: '#eab308',
+              }
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'slide-in-right': {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+              'slide-in-right': 'slide-in-right 0.3s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+        "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+        "@google/genai": "https://esm.sh/@google/genai@1.20.0"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
